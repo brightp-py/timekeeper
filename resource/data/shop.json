@@ -1,0 +1,308 @@
+{
+    "Armor": {
+        "text": "Time to play dressup!",
+        "cost": 3,
+        "tier": 1,
+        "stats": {
+            "Recovery": 1
+        },
+        "materials": {}
+    },
+    "Magnifier": {
+        "text": "Something about fluid dynamics...",
+        "cost": 3,
+        "tier": 1,
+        "stats": {
+            "Speed": 1
+        },
+        "materials": {}
+    },
+    "Plasma": {
+        "text": "The stuff you shoot.",
+        "cost": 3,
+        "tier": 1,
+        "stats": {
+            "Damage": 1
+        },
+        "materials": {}
+    },
+    "Battery": {
+        "text": "Please dispose of properly.",
+        "cost": 3,
+        "tier": 1,
+        "stats": {
+            "Reload": 1
+        },
+        "materials": {}
+    },
+    "Socks": {
+        "text": "You wear through them quick...",
+        "cost": 3,
+        "tier": 1,
+        "stats": {
+            "Agility": 1
+        },
+        "materials": {}
+    },
+    "Nerd Glasses": {
+        "text": "You wouldn't hit a guy with glasses!",
+        "cost": 9,
+        "stats": {
+            "Speed": 3,
+            "Recovery": -1
+        },
+        "materials": {
+            "Magnifier": 2,
+            "Armor": 1
+        }
+    },
+    "Closegun": {
+        "text": "Like a shotgun, but... yeah, it's a shotgun.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Damage": 3,
+            "Speed": -1
+        },
+        "materials": {
+            "Plasma": 2,
+            "Magnifier": 1
+        }
+    },
+    "Autoloader": {
+        "text": "Automatically reloads. Also finishes your sentences fo- [FOR YOU].",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Reload": 3,
+            "Damage": -1
+        },
+        "materials": {
+            "Battery": 2,
+            "Plasma": 1
+        }
+    },
+    "Wheelies": {
+        "text": "The batteries just make them light up.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Agility": 3,
+            "Reload": -1
+        },
+        "materials": {
+            "Socks": 2,
+            "Battery": 1
+        }
+    },
+    "Real Boots": {
+        "text": "You're not a real person, but you're a real person with boots.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Recovery": 3,
+            "Agility": -1
+        },
+        "materials": {
+            "Armor": 2,
+            "Socks": 1
+        }
+    },
+    "Hot Soup": {
+        "text": "*slurp* Ah ooh ah ouch",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Damage": 3,
+            "Recovery": -1
+        },
+        "materials": {
+            "Plasma": 2,
+            "Armor": 1
+        }
+    },
+    "Propane Tank": {
+        "text": "Please ignore the warning label.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Reload": 3,
+            "Recovery": -1
+        },
+        "materials": {
+            "Battery": 2,
+            "Armor": 1
+        }
+    },
+    "Jetpack": {
+        "text": "Hover a whole 1.24 inches above the ground!",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Agility": 3,
+            "Recovery": -1
+        },
+        "materials": {
+            "Socks": 2,
+            "Armor": 1
+        }
+    },
+    "Alarm Clock": {
+        "text": "To remind you when to shoot.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Reload": 3,
+            "Speed": -1
+        },
+        "materials": {
+            "Battery": 2,
+            "Magnifier": 1
+        }
+    },
+    "Rocket Shoes": {
+        "text": "Wheels on the bottom and boosters in the back. Good luck aiming!",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Agility": 3,
+            "Speed": -1
+        },
+        "materials": {
+            "Socks": 2,
+            "Magnifier": 1
+        }
+    },
+    "Cybersuit": {
+        "text": "Arms not included.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Recovery": 3,
+            "Speed": -1
+        },
+        "materials": {
+            "Armor": 2,
+            "Magnifier": 1
+        }
+    },
+    "Flaming Cape": {
+        "text": "Dude, you look so hot rn.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Recovery": 3,
+            "Damage": -1
+        },
+        "materials": {
+            "Armor": 2,
+            "Plasma": 1
+        }
+    },
+    "Laser Scope": {
+        "text": "Doubles as a cat toy.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Speed": 3,
+            "Damage": -1
+        },
+        "materials": {
+            "Magnifier": 2,
+            "Plasma": 1
+        }
+    },
+    "Forcefield": {
+        "text": "It says it's 'powered by dogs'?",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Recovery": 3,
+            "Reload": -1
+        },
+        "materials": {
+            "Armor": 2,
+            "Battery": 1
+        }
+    },
+    "Infrared Goggles": {
+        "text": "They just make everything red...",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Speed": 3,
+            "Reload": -1
+        },
+        "materials": {
+            "Magnifier": 2,
+            "Battery": 1
+        }
+    },
+    "Tazer": {
+        "text": "It's a tazer.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Damage": 3,
+            "Reload": -1
+        },
+        "materials": {
+            "Plasma": 2,
+            "Battery": 1
+        }
+    },
+    "Microwave": {
+        "text": "BRRRRRRRRRRRR *ding!*",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Damage": 3,
+            "Agility": -1
+        },
+        "materials": {
+            "Plasma": 2,
+            "Socks": 1
+        }
+    },
+    "Robot Arm": {
+        "text": "Did they really have to take my original arm out?",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Reload": 3,
+            "Agility": -1
+        },
+        "materials": {
+            "Battery": 2,
+            "Socks": 1
+        }
+    },
+    "Sunhat": {
+        "text": "Hold onto it so the wind doesn't blow it away.",
+        "cost": 9,
+        "tier": 2,
+        "stats": {
+            "Agility": 3,
+            "Damage": -1
+        },
+        "materials": {
+            "Socks": 2,
+            "Plasma": 1
+        }
+    },
+    "Vaporized Soup": {
+        "text": "This stuff looks deadly.",
+        "cost": 15,
+        "tier": 3,
+        "stats": {
+            "Damage": 6,
+            "Agility": 2,
+            "Recovery": -1,
+            "Speed": -1
+        },
+        "materials": {
+            "Hot Soup": 1,
+            "Microwave": 1
+        }
+    }
+}
