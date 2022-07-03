@@ -32,6 +32,11 @@ class Unit:
         self.bullet_speed = 8
         self.damage = 4
 
+        # precision stats for shooting inaccurately
+        self.prec_rad_main = 1
+        self.prec_rad = 1
+        self.prec_time = 0
+
         self.main_color = color
         self.main_gun = Gun()
 
@@ -99,6 +104,9 @@ class Unit:
     def update(self):
         self.color = self.main_color
         self.gun = self.main_gun
+        self.prec_rad = self.prec_rad_main
+
+        self.prec_time += 1
 
         done = []
         for i, effect in enumerate(self.effects):
@@ -109,6 +117,23 @@ class Unit:
             self.effects.pop(i)
 
     def shoot(self, bullets, direction, **argv):
+        prec = np.sin(self.prec_time) + np.sin(2 * self.prec_time) / 360
+        prec *= self.prec_rad
+
+        dx, dy = direction
+        dis = np.sqrt(dx ** 2 + dy ** 2)
+        dx /= dis
+        dy /= dis
+
+        if dy == 0:
+            angle = dx * np.pi / 2
+        else:
+            angle = np.arctan(dx/dy) * (1 if dx > 0 else -1)
+        
+        angle += prec
+
+        direction = (np.cos(angle) * dis, np.sin(angle) * dis)
+
         # add a bullet to the list of bullets
         self.gun.shoot(bullets, (self.x + direction[0], self.y + direction[1]),
             direction, self, self.color, self.damage)
@@ -507,6 +532,7 @@ class SoupBullet(Bullet):
         unit.color = (255, 150, 0)
         unit.get_hurt(1)
         unit.burn -= 1
+        unit.pred_rad = 360
         if unit.burn <= 0:
             return True
         return False
